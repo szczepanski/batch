@@ -34,9 +34,9 @@ IF /i {%opcja%}=={x} GOTO :opcja_x
 REM pole prostokata
 :opcja_1
 @echo.
-@echo #####################################
-@echo Witaj w programie liczacym pola prostokatow :)
-@echo #####################################
+@echo #################################################
+@echo ## Witaj w programie liczacym pola prostokatow ##
+@echo #################################################
 @echo.
 SET /P bok_a=Podaj wartosc pierwszego boku: (cm) 
 SET /P bok_b=Podaj wartosc drugiego boku: (cm) 
@@ -50,84 +50,31 @@ SET /A wynik = %bok_a% * %bok_b%
 @echo.
 GOTO menu_powrotne
 
+
 REM liczenie plikow
 :opcja_2
 @echo.
-@echo #####################################
-@echo Witaj w programie liczacym pliki w podanym folderze
-@echo #####################################
+@echo #########################################################
+@echo ## Witaj w programie liczacym pliki w podanym folderze ##
+@echo #########################################################
 @echo.
 set licznik=0
 SET /P typ_pliku=Podaj rodzaj plikow ktore chcesz policzyc (txt / jpg / html / inne..) 
 SET /P folder=Teraz, podaj sciezke folderu w ktorym chcesz policzyc pliki (np: C:\Users\filip\Desktop\nazwa_foldera\) 
 @echo.
 for %%A in (%folder%*.%typ_pliku%) do set /a licznik+=1
-@echo **************************************************
-@echo Liczba plikow typu %typ_pliku% w folderze %folder%
-@echo **************************************************
+@echo ***********************************************************
+@echo Liczba plikow typu %typ_pliku% w folderze %folder% wynosi:
+@echo ***********************************************************
 @echo %licznik%
-@echo **************************************************
+@echo ***********************************************************
 @echo.
 @echo.
 GOTO menu_powrotne
+
 
 REM wyjscie z programu
 :opcja_x
 @echo Do zobaczenia !
 timeout 1 > nul
 exit
-
-
-
-
-REM :tak
-REM @echo ooo!, dzieki :)
-REM SET /P ODPOWIEDZ_2=Chcesz zobaczyc maly trik? (t/n)
-REM cls
-REM timeout 1 > nul
-REM cls
-REM IF /i {%ODPOWIEDZ_2%}=={t} GOTO :trik
-REM IF /i {%ODPOWIEDZ_2%}=={tak} GOTO :trik
-REM IF /i {%ODPOWIEDZ_2%}=={n} GOTO :koniec_nie
-REM IF /i {%ODPOWIEDZ_2%}=={nie} GOTO :koniec_nie
-REM GOTO :koniec_tak
-
-
-REM :nie
-REM cls
-REM @echo hmm...szkoda :(
-REM timeout 1 > nul
-REM cls
-REM GOTO :koniec_nie
-
-
-REM :trik
-REM @echo .
-REM @echo .
-REM @echo #############
-REM @echo ## BOOOOM! ##
-REM @echo #############
-REM @echo .
-REM @echo .
-
-
-REM timeout 2 > nul
-REM start https://google.pl
-REM exit
-
-
-REM :koniec_tak
-REM @echo swietnie, dziekuje za wyprobowanie
-REM timeout 1 > nul
-REM exit
-
-
-REM :koniec_nie
-REM @echo hmm... moze innym razem
-REM timeout 1 > nul
-REM exit
-
-
-
-
-
