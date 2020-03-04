@@ -31,14 +31,13 @@ GOTO :koniec_nie
 
 
 :trik
-color c
-@echo.
-@echo.
+@echo .
+@echo .
 @echo #############
 @echo ## BOOOOM! ##
 @echo #############
-@echo.
-@echo.
+@echo .
+@echo .
 
 
 timeout 2 > nul
