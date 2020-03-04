@@ -4,4 +4,4 @@
 
 
 # Resources (zrodla)
-https://www.youtube.com/watch?v=kZN4xmEGcnM&list=PLFgIWXDBRJ5AzTgwJMvafOOlbMnEScJmL&index=5
+[a](https://www.youtube.com/watch?v=kZN4xmEGcnM&list=PLFgIWXDBRJ5AzTgwJMvafOOlbMnEScJmL&index=5)
