@@ -29,6 +29,7 @@ timeout 1 > nul
 cls
 GOTO :koniec_nie
 
+
 :trik
 @echo .
 @echo .
